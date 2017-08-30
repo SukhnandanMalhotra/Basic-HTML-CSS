@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<title>myprofile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  display: inline-block;
+ 
+  background-color: ;
+  
+  color: #FFFFFF;
+  
+  
+  
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-repeat: repeat-x;
+     margin-top: 30px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+li span{
+	float:left;
+	display: inline-block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:Lucida Console, monospace;
+    font-weight: bold;
+    
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    font-family:Lucida Console, monospace;
+    font-weight: bold;
+    
+}
+span.note {
+    font-size: 400%;
+    color: white;
+    font-family: Sofia;
+    
+    
+}
+</style>
+</head>
+<body>
+<ul>
+   <li ><span><button class="button" style="vertical-align:middle"><span>My Profile</span></button></span></li>
+   <li><a href="sukh3.html"><button class="button" style="vertical-align:middle"><span>Academics and Work Experience </span></button>
+</a></li>
+  <li><a href="sukh2.html"><button class="button" style="vertical-align:middle"><span>Interest and Hobbies</span></button></a></li>
+  <li><a href="sukh1.html" style="font-family:Lucida Console, monospace;"><button class="button" style="vertical-align:middle"><span>About</span></button></a></li>
+  
+  
+  
+  
+  
+</ul>
+
+
+
+
+    <h1 style="text-align: center;"><span class="note"><br>Welcome</span></h1> 
+      
+
+</body>
+</html>

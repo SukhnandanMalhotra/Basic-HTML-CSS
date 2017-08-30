@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #car {
+      position: fixed;
+      cursor: pointer;
+      width: 50%;
+      height: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="car" src="orangecar.png">
+  <script>
+      car.onclick = function() {
+      
+      var start = Date.now();
+     var timer = setInterval(function()
+       { Move();
+       	myfunction();
+       }, 20)
+  
+      function Move() {
+      	
+      
+        var timePassed = Date.now() - start;
+
+        car.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }
+      function myfunction() {
+     	console.log(Date.now() - start)
+      	var timePassed = Date.now() - start;
+      	if (timePassed > 2000) 
+      		{
+      			console.log("stop");
+      			alert('STOP');}
+
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
+      
+
+
+        
+        
+
+    
+  
+  
+     
+    
+
+        
+
+        
+
+       
+    
